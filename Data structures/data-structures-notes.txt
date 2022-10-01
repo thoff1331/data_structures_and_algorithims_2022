@@ -173,3 +173,43 @@ Access O(N)
 
 Browser history is often is implemented with a doubly linked list;
 Finding nodes can be done in half the time but they cost more memory 
+
+
+Stacks
+
+colleectiion of data LAST IN FIRST OUT DATA STRUCTURE
+
+last element to be added is to be the first element to be remobed 
+
+the call stack 
+used to manage function invocations
+undo and redo functionality 
+routing (the history object uses a stack)
+
+there is more than one way to create stacks
+
+
+BIG O of stacks 
+
+Insertion O(1) important 
+Removal O(1)  important 
+Searching O(N) not the best data structure for this
+Access O(N)
+
+
+Queues 
+
+add data in and remove data but in a First In First Out Data structured mannner 
+
+-- waitig in line 
+-- background tasks on cpu 
+-- downloading or uploading files size dependent 
+-- printer queue 
+
+
+Big O of Queues
+
+Insertion O(1) important 
+Removal O(1)  important 
+Searching O(N) not the best data structure for this
+Access O(N)  not the best data structure for this
