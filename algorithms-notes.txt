@@ -1,0 +1,310 @@
+Data structures and algorithms udemy course 
+Big O notation a way to determine how fast or efficient a function is A scale 
+
+Helps to identify when code is slow where it can be improved 
+
+		BIG O Notation - general trend 
+
+What does better mean in Big O notation 
+- Speed and memory intensity 
+- Efficient code that is readable is the ultimate goal 
+
+Performance.now()
+
+Time - 
+ - different machines will record different times 
+- Same machine will record different times 
+
+
+Count the number of operations the computer has to perform regardless of the size  of n 
+
+Relationship between the time and the input as input shows growth 
+
+Runs in worst case scenario	
+
+Can be linear n = n 
+Could quadratic n^2  
+Could be constant = 1 
+Could be something entirely different
+
+
+O(1) - as input grows the  runtime does not grow  known as constant 
+O(n)
+
+Simplifying Big O expressions 
+
+- Contants don’t matter  O(2n) -> O(n) && O(500) -> O(1). O(13n^2) -> O(n^2)
+- Smaller Terms don’t matter O(n+10) => O(n). O(1000n + 50) => O(n)
+
+ - Math operations are constant 
+ - Variable assignment is constant 
+- Accessing elements of an array is constant 
+- In a loop the complexity s the length of the loop times the complexity of whatever happens inside of the loop
+
+				   Space complexity 
+
+Auxiliary	space complexity is refers to the space required by the algorithm and not including space taken up by the inputs 
+
+Booleans, numbers,undefined,null are constant space 
+Strings require O(n) where n is the string length 
+Reference types objects and arrays are also 0(n) based on lengths or key/value pairs 
+
+
+Logarithims 
+
+
+The log of a number roughly measures the number of times you can divide that number by 2 before you get a value that is less than or equal to 1 
+O(log n) is great 
+
+Some searching algorithims have logarthimic time complexity as well as sorting algos and recursion also involves log complexity. 
+
+
+Big O of objects  order doesn’t matter with objects 
+
+Insertion O(1)
+Removal O(1)
+Searching - O(n) — checking to see if a value is in the object 
+Access - O(1)
+Object methods 
+
+Keys,values, and entries are all 0(n)
+Hasownproperty 0(1) constant time
+
+
+Big O of arrays —  when order is needed 
+
+
+Insertion - it depends 
+
+Adding  at the end is O(1)
+Adding at front causes reindexing so O(n)
+
+Removal - it depends 
+
+Searching - O(N)
+Access - O(1)
+ 
+
+
+
+
+Array methods 
+Push and pop are O(1)
+
+Shift,unshift,concat,slice,splice are O(N)
+Sort is O(N * log N)
+Foreach,map,filter,reduce are O(N)
+
+
+Algorightims and Problem solving patterns 
+
+
+Algorithm- a process or set of steps to accomplish a certain task 
+
+How do you improve 
+— devise a plan to solve the problem 
+— master common problem solving patterns 
+
+Understand the problem 
+Explore concrete examples 
+Break it down 
+Solve/simplify
+Revisit and refactor 
+
+How to solve - George polya Book 
+
+Step 1. Understand the problem 
+1. Can I restate the problem in my own 
+2. What are the inputs 
+3. What should the outputs be 
+4. Do I have enough info 
+5. How do I label important pieces of data 
+
+Step 2: explore examples 
+- Simple examples 
+- Progress to more complex solutions 
+- Explore examples with empty inputs 
+- Explore examples with invalid inputs 
+
+Step 3: Break it down 
+— explicitly write out the steps you need to take 
+
+Step 4: Solve/Simplify
+
+
+Step 5: Look back and refactor 
+
+
+PROBLEM SOLVING PATTERNS
+
+Frequency counter pattern 
+This pattern uses objects or sets to collect values/frequencies of values 
+Helps to avoid nested loops that give 0(n^2) which is quadratic time complexity 
+
+
+Multiple pointer patterns 
+
+
+Moving points toward or away from each other to find values 
+
+
+Sliding Window pattern 
+
+involves creating a window which can either be an array or number from one position or another 
+depending on certain condition the window 
+either increases or closes and a new window is craeted 
+very useful for keeping track of a subset of data in an array or string 
+
+Divide and Conquer pattern 
+
+dividing a set of data into smaller chuncks and then repatong process with a subset of the the data 
+
+Sorting algorithims 
+
+rearraning items in any collection so that the items are in some kind of order 
+
+-- incredibly common 
+each sorting algos have their own pros and cons
+
+bubble sort 
+selection sort 
+insertion sort 
+
+built in sort 
+sorts strings 
+
+does not sort numbers auto 
+
+sorts by unicode value 
+accepts optional compare function 
+
+Buuble sort -- largest values will bubble to the top 
+
+ compare to the item in front swap if it is larger and compare to the next one again 
+
+Bubble sort time complexity O(n^2)
+can be O(n) if nearly sorted 
+
+Selection sort 
+ place small values into sorted positions in the front of the array 
+
+
+insertion sort 
+
+builds up the sort by gradually creating a larger left portion which is always sorted 
+
+pick the second element and compare it to the first and swap if neccesary 
+
+time complexity quadratic time complexity O(n^2)
+
+online algorithims -- can accept new data live 
+
+
+bubble selection and insertion all have a space complecity of 0(1) they are all roughly equal all have quadratic time complexities   these do not scale well 
+
+
+
+Merge Sort
+
+so much faster than bubble insertion and selction sort 
+-- more efficent algorthims are less simple but take more time to understand 
+
+johnathan van noyman -1948;
+
+combo of merging, and sorting 
+exploits that an array with one or zero elements are sorted 
+splits large array into small arrays until the are 1 or zero in length by diving in half til length is 0 or one, then compare first item in each item then merge those until we end up with a sorted array equal to that of the original array
+
+Merging 
+
+O(n+m)
+
+
+most merge sorts use recursion 
+
+
+Big O of merge sort is  O(n log n) time complexity  space complexity is O(n)
+
+which is fair 
+
+
+javascript sets let you store unique values of any type 
+
+Quick sort 
+ exploits fact that array of one item are always sorted 
+selects one element called the pivot  and finds the index 
+and puts all numbers less than on the left snd greater than on the right so the pivot is now in the correct spot then recursively do the same thing with the array on the left of the pivot and the same thing with the array on the right side of the pivot 
+Does make another array 
+- middle value is optimal 
+
+Big O of quicksort 
+
+worst  is 0(n^2) based on decompositions of arrays unti they have a length of 1 or 0 
+0(n) decomopositions then 0(n) comparisons per decompositions 
+
+
+previous sorts were comparison sorts 
+average time complexity 
+bubble,insertion,selection 0(n^2)
+quick and merge sort O(n log n)
+best in any comparisson sort is O(nlogn)
+
+integer sorting algos 
+
+radix sort 
+
+
+ works on lists of numbers 
+never makes comparisons 
+exploits the fact that info about the size of a number is encoded in the number of digits 
+
+take right most digit in each number and groups them into buckets then puts them into a list in the order of their buckets and then repeats the process off of the second digit to the  left  and then continues with the next digit to the left putting numbers in buckets each time and reforming the array 
+
+helper methods 
+
+getdigit takes  a number and a position and returns the number at that position 
+
+function getDigit(num,1) {
+return Math.floor(Math.abs(num) / Math.pow(10,1)) %  10)
+}
+
+figure out how many digits are in a number 
+digitCount then use digit count to see the longest number in length 
+
+function digitCount() {
+
+}
+
+most digits using digit counts 
+
+buckets are just empty arrays 
+
+buckets or ques 
+
+
+worst is 0(nk) k is the number of digits in the number 
+n is the length 
+k is the number of digits(average)
+
+
+space complexity is O(n + k)
+
+Data Structures 
+
+collections of values the relationships between them and the functions or operations that can be applied to the data 
+
+
+
+
+class is blueprint for creating objects with predefined properties and methods 
+
+the method to create new objects must be called constructor 
+
+to create a an object from a class we use the new keywors 
+
+just the pattern to creat the object 
+
+this inside a constructor this refers to the individual class 
+
+
+

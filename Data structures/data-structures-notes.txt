@@ -1,0 +1,175 @@
+TACK
+ follows the lifo last in first out principle 
+
+common methods of  a stack 
+
+-- push 
+-- pop 
+-- peek 
+-- length 
+
+
+    QUEUE
+ similart to a stack but follows the fifo first in first out principle 
+
+common methods 
+
+-- enqueue -- enter and add element at the end 
+-- dequeue -- leave, remove front element and return it 
+-- front -- get the first element 
+-- isEmpty -- Determine wether the queue is empty 
+-- size --  get the number of elements in the queue 
+
+PRIORITY QUEUE 
+
+similar to a queue but orders items by priority level 
+
+LINKED LIST 
+
+a chaine A linked list is a chained data structure. Each node consists of two pieces of information: the data of the node and the pointer to the next node. Linked list and conventional array are both linear data structures with serialized storage. Of course, they also have differences:
+
+Unilateral linked list methods 
+
+size: Return the number of node(s).
+head: Return the element of the head.
+add: Add another node in the tail.
+remove: Remove a certain node.
+indexOf: Return the index of a node.
+elementAt: Return the node of an index.
+addAt: Insert a node at a specific index.
+removeAt: Delete a node at a specific index.
+
+
+SET 
+
+
+A set is a basic concept in mathematics: a collection of well defined and distinct objects. ES6 introduced the concept of set, which has some similarities to  an array. However, a set does not allow repeating elements and is not indexed.
+
+TYPICAL SET METHODS IN JAVASCRIPT
+values: Return all elements in a set.
+size: Return the number of elements.
+has: Determine whether an element exists.
+add: Insert elements into a set.
+remove: Delete elements from a set.
+union: Return the intersection of two sets.
+difference: Return the difference of two sets.
+subset: Determine whether a certain set is a subset of another set.
+
+Hash Table 
+
+A  hash table is a key-value data structure. Due to the lightning speed of querying a value through a key, hash tables are commonly used in map, dictionary or object data structures. As shown in the graph above, the hash table uses a hash function to convert keys into a list of numbers, and these numbers serve as the values of corresponding keys. To get value using a key is fast; time complexity can achieve O(1). The same keys must return the same values, which is the basis of the hash function.
+
+HASH TABLE METHODS IN JAVASCRIPT
+add: Add a key-value pair.
+remove: Delete a key-value pair.
+lookup: Find a corresponding value using a key.
+
+
+TREE 
+
+Tree data structure is a non-linear multi-layer data structure in contrast to array, stack and queue. This structure is highly efficient during insert and search operations. Let’s take a look at some concepts of tree data structure:
+
+TREE DATA STRUCTURE CONCEPTS
+root: Root node of a tree; no parent node for root.
+parent node: Direct node of the upper layer; only has one
+child node: Direct node(s) of the lower layer; can have multiple
+siblings: Share the same parent node
+leaf: Node with no child
+Edge: Branch or link between nodes
+Path: The edges from a starting node to the target node
+Height of Node: Number of edges of the longest path of a specific node to leaf node
+Height of Tree: Number of edges of the longest path of the root node to the leaf node
+Depth of Node: Number of edges from root node to specific node
+Degree of Node: Number of child nodes
+
+
+TRIES 
+
+Trie (pronounced “try”) or “prefix tree” is also a type of search tree. Trie stores the data step-by-step; each node in the tree represents a step. We use trie to store vocabulary so it can be quickly searched, especially for an auto-complete function.
+
+Each node in trie has an alphabet and following the branch can form a complete word. It also comprises a boolean indicator to show whether or not it’s the end of a string.
+
+METHODS OF TRIE IN JAVASCRIPT
+add: Insert a word into the dictionary tree.
+isWord: Determine whether the tree consists of a certain word.
+print: Return all words in the tree.
+
+
+
+GRAPHS 
+
+
+Graphs, sometimes known as networks, refer to sets of nodes with linkages (or edges). We can further divide graphs into two groups (i.e. directed graphs and undirected graphs), according to whether the linkages have direction. We use graphs in our daily lives without even realizing it. Graphs help calculate the best route in navigation apps or recommend friends with whom we might like to connect.
+
+
+ADJACENCY MATRIX
+Adjacency matrix shows nodes in rows and columns. Intersections of the row and column interpret the relationship between nodes: 0 means not linked, 1 means linked and >1 means different weightage.
+
+javascript-data-structures
+Illustration of adjacency matrix
+To query for nodes in a graph, one must search through the entire tree network with either the breadth-first-search (BFS) method or the depth-first-search (DFS) method.
+
+
+
+SINGLY LINKED LISTS
+data structure contains a head, tail, and length 
+
+each node has a value and each node has a value and a pointer to another node or null the tail node will point to null 
+
+each node is only unilaterally connected to the next node 
+
+lists vs arrays
+
+lists 
+- do not have indexes 
+- connected via nodes with a next pointer 
+- random access is not allowed 
+
+Array 
+
+- indexed order 
+- insertion and deletion can be expsensive 
+- can quickly be accessed at a specific index 
+
+
+
+Strenths
+-- figuring things out 
+-- strong desire to learn and be the best at my job that I can be 
+-- willingess to help my teammates out 
+
+weaknesses 
+
+
+get and set 
+
+
+
+Big O of Singly Linked lists 
+
+-- insertion O(1)
+
+-- Removal it depends 
+-- Searching O(n)
+-- access O(n)
+
+
+
+Doubly Linked Lists 
+
+ almost identical to singly linked list adds a pointer to the previous node and has a pointer to the  next node. 
+
+code does get more comflicated becuase of the extra pointere 
+
+more memory is used but doubly is more flexible 
+
+
+Big O of Doubly Linked Lists
+
+Insertion O(1)
+Removal O(1);
+Searching 0(N)
+Access O(N)
+
+Browser history is often is implemented with a doubly linked list;
+Finding nodes can be done in half the time but they cost more memory 
