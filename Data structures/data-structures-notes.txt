@@ -213,3 +213,54 @@ Insertion O(1) important
 Removal O(1)  important 
 Searching O(N) not the best data structure for this
 Access O(N)  not the best data structure for this
+
+
+
+Trees
+ -- consists of nodes in a parent child relationship 
+ -- lists are linear 
+ -- trees  are nonlinear
+-- node can only point to a parent 
+root - the top node in a tree 
+child - a node directly connected to another node when moving away from the root 
+Parent 
+sibilings - nodes with the same parent 
+leaf - a node with no children 
+edge - the connection between nodes 
+
+Real world applications 
+HTML DOM 
+Network routing 
+decsion tree(choose your own adventure)
+Folders in an operating system 
+JSON can be in a tree structure 
+
+Kinds of trees 
+Trees 
+Binary trees 
+Binary Search Trees 
+
+these excel at searching 
+
+binary tree - each node can have a max of two children 
+sorted in an order 
+
+BST's -- Binary Search Tree 
+
+used to store data that can be compared and ordered 
+- every node on the left of the node is less than the node and every node that is on the right of the node is greater than the node. 
+
+searching a binary search tree (sorted)
+very quick lookup
+
+you can either ignore duplicates on insertion or also add a frequency counter to each node.
+but will still traverse the tree to determine if that value is in the tree 
+
+Big O of Binary Search Tree
+
+Insert O(log n )
+Find O(log n)
+log base 2 of n 
+not guaranteed 
+
+            Tree Traversal 
