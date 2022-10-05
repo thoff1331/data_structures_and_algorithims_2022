@@ -342,3 +342,51 @@ search O(n) not the best data structure for this
 
 max or min binary heaps  parent bigger than child or child bigger than parent 
 we can represent heaps using arrays
+
+
+Hash Tables 
+
+-- hash tables are used to store key-value pairs
+-- they are like arrays but keys are not ordered 
+-- they are fast for all of the following operations: finding values, adding new values, and removing values. 
+
+very commonly used 
+
+python has dictionaries 
+javascript has objects and maps 
+java,go, and scala have maps 
+Ruby has hashes 
+
+if we wanted to store hex colors 
+ex:
+
+{
+"pink": "#000290"
+}
+
+
+in order to lookup values by key we nned a way to convert keys into valid array indices 
+a function that performs this task is called a hash function
+hash functions are usually one way functions cant't go backwards from output to input 
+
+a good hash function is:
+ Fast O(1)
+ doesn't cluster ouputs and distrubutes outputs uniformily 
+deterministic same input returns the same output each time 
+
+Dealing with collisions
+
+collisions are inevitable 
+
+seperate chaining
+ store those values in a nested  more complex data structure array or linked list 
+
+linear probing 
+
+we search through the array to see where there is an empty slot and store the value there rather than storing in same index, but only allows one item at each index 
+
+
+
+INSERT O(1)
+DELETION O(1)
+ACCESS O(1)
