@@ -53,4 +53,58 @@ class BinarySearchTree {
     }
   return false
   }
+  BFS() {
+    let data = [];
+    let q = [];
+    let node = this.root;
+    q.push(node);
+    while(q.length) {
+      node =  q.shift();
+      data.push(node);
+      if(node.left) {
+        q.push(node.left)
+      } if(node.right) {
+        q.push(node.right)
+      }
+      return data
+    }
+  }
+  DFSPreOder() {
+    let data = [];
+    let current = this.root;
+    function traverse(node) {
+      data.push(node)
+     if(node.left) travese(node.left);
+     if(node.right) travese(node.right);
+    }
+    travsere(this.root);
+    return data
+  }
+  DFSPostOrder(){
+    let data = [];
+    let current = this.root;
+    function traverse(node) {
+     if(node.left) travese(node.left);
+     if(node.right) travese(node.right);
+      data.push(node);
+    }
+    travsere(this.root);
+    return data
+  }
+  DFSInOrder() {
+     let data = [];
+    let current = this.root;
+    function traverse(node) {
+     if(node.left) travese(node.left);
+      data.push(node);
+     if(node.right) travese(node.right);
+    }
+    travsere(this.root);
+    return data
+  }
 }
+
+// Tree Traversal BFS method above 
+// Tree Traversal DFS
+// traversal method is helper 
+

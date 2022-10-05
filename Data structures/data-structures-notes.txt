@@ -264,3 +264,81 @@ log base 2 of n
 not guaranteed 
 
             Tree Traversal 
+Breadth first search - wide
+
+Depth First Search  - height 
+
+-- inorder
+-- preorder 
+-- postorder 
+
+    Breadth First search --  BFS
+  visit every node on the same level before moving down a level 
+   
+Depth first search - DFS
+
+
+PreOrder 
+
+--  visit the root and then traverse left side fully first then return to the right side and then visit right side fully 
+
+DFS Post Order 
+visit the node after looking after each branch fully root node is last visited.
+
+
+DSF InOder 
+
+traverse entire left side then visit the root then do the same for the entire right side
+
+
+DFS VS BFS 
+
+BFS - gives fewer nodes to keep trcak of 
+wider tree takes up more space with BFS  and taller tree takes up more space with DFS 
+
+
+
+Inorder is common on BST 
+comes in underlying order lowest to highest order 
+
+Pre-order can be used to export a tree so that it can be easily reconstructed the root comes first 
+
+
+Binary trees can have values of any type
+BST every node to left is less than every node to the right is greater than 
+
+
+      Binary Heaps
+
+Very similar to a binary search tree 
+in  a maxbinaryheap parent nodes are always larger than child nodes
+in a minbinaryheap parent nodes are always smaller than child ndoes 
+I each node can have at most two children there is no order to the left node or the right node 
+compact as possible, all the children of each node are as full as they can be and the left children are filled out first only the root node is the biggest/smallest 
+
+heaps are used to implement a priority queue
+they are also used with graph traversal 
+
+easy way of storing a binary heap is an array/list 
+
+for any index of an array n
+where n is the index of the array 
+-- the left child is stored at 2n + 1
+-- the right child is stored at 2n  + 2
+ if we have a child node and want to find the parent 
+
+at index n (n - 1 ) / 2 floored 
+
+Priority queues 
+
+each element has a priority 
+elements with higher priorities are served before elements with lower priorities 
+
+Big O of Binary Heaps
+
+insertion 0(log n) log base 2 of n 
+removal O(log n) log base 2 of n 
+search O(n) not the best data structure for this
+
+max or min binary heaps  parent bigger than child or child bigger than parent 
+we can represent heaps using arrays
