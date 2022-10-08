@@ -390,3 +390,60 @@ we search through the array to see where there is an empty slot and store the va
 INSERT O(1)
 DELETION O(1)
 ACCESS O(1)
+
+
+Graphs
+
+reccomendations on netflix 
+"people also watched"
+"frequently bought with on Amazon"
+a collection of nodes and connecetions 
+
+uses for graphs 
+social networks
+ location 
+file systems 
+
+Vertex -  a node
+edge - connection between nodes 
+
+undirected - no direction or polarity can go both ways between connections 
+directed  - arrows as edges 
+
+weighted graph --  there is  a value assigned  to the edge 
+
+unweighted graph -- there is no value assigned to the edge
+
+BIG O
+V = NUMBER OF VERTICES
+E = NUMBER OF EDGES
+
+      adjaceny matrix    adjacency list 
+ADD VERTEX     O(1)         O(V^2)
+ADD EDGE       O(1)         O(1)
+REMOVE VERTEX  O(V +E)      O(V^2)
+REMOVE EDGE    O (E)        O(1)
+QUERY          O(V+E)       O(1)
+STOARGE        O(V+E)       O(V^2)
+
+MATRIX
+  a b c d e      
+a 1 1 - - -
+b - - 1 - -
+c - - - 1 -
+d - 1 1 - -
+
+
+LIST/HASHMAP
+
+const graph = {
+  a: ['a', 'b'],
+  b: ['c'],
+  c: ['d'],
+  d: ['b', 'c']
+}
+
+
+Graph Traversal 
+
+Depth first traversal

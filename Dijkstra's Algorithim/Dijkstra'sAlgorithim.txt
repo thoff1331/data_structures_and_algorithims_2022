@@ -1,0 +1,6 @@
+Shortest path algorithim 
+ uses graphs and priority queue/binary heap 
+ it finds finds the shortest path between two vertices on a graph 
+
+-- he was a dutch programmer, physisst,essayist
+-- his discoveries are still used today 
