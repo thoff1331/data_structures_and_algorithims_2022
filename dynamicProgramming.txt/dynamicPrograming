@@ -1,0 +1,60 @@
+a method for solving a complex problem into a collection of subproblems, and solving each of those subproblems just once and storing their solutions. 
+
+term comes from finding an optional solution 
+
+Overlapping subproblems 
+
+a problem that can be broken down into subproblems which are reused serveral times
+
+optimal substructure
+
+a problem is said to have optimal substructure if the optimal solution can be constructed from optimal solutions of its subproblems. 
+
+
+the fib sequence
+
+
+function fib(n) {
+  if(n  <= 2) return 1;
+  return fib (n - 1) + fib(n - 2);
+  
+}
+
+
+fib(5)
+
+BIg O of above O(2^n) exponential 
+
+we redo the same calculations multiple times without storing them, this is where dynamic programming can help us. 
+
+uses past knowledge to make a present problem easier 
+
+memoization - storing the results of expensive function calls and returns the cached results when the same inputs occur again.
+
+function fib(n, memo=[]){
+  if(memo[n] !== undefined) return memo[n]
+  if(n <= 2) return 1;
+  var res = fib(n-1, memo) + fib(n-2, memo);
+  memo[n] = res;
+  return res;
+}
+
+
+time complexity of above 
+O(n) roughly grows linerally 
+
+bottom up 
+
+Tabulation - storing the results of a previous result in a table(usually an array)
+usually done using iteration better in terms of space complexity 
+
+
+function fib(n){
+    if(n <= 2) return 1;
+    var fibNums = [0,1,1];
+    for(var i = 3; i <= n; i++){
+        fibNums[i] = fibNums[i-1] + fibNums[i-2];
+    }
+    return fibNums[n];
+}
+
